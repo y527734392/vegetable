@@ -1,0 +1,46 @@
+@function px2rem($px) {
+  @return $px/24 + rem;
+}
+
+body { background: #c4c4c4; }
+
+#wrapper {position: absolute; z-index: 1; top: -1px; bottom: px2rem(48); left: 0; width: 100%; background: #ccc; overflow: hidden;  }
+
+.slide_box { position: absolute; z-index: 1; -webkit-tap-highlight-color: rgba(0,0,0,0); width: 100%; -webkit-transform: translateZ(0); -moz-transform: translateZ(0); -ms-transform: translateZ(0); -o-transform: translateZ(0); transform: translateZ(0); -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; -o-text-size-adjust: none; text-size-adjust: none; }
+
+/*banner start*/
+.banner { width: 100%; height: px2rem(285); margin:0 auto; margin-bottom: px2rem(10);position:relative;overflow:hidden;z-index:1; }
+.banner .swiper-slide { text-align: center; display: -webkit-box; display: -ms-flexbox; display: -webkit-flex;  display: flex;  -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center;  -webkit-align-items: center; align-items: center;-webkit-flex-shrink:0;-ms-flex:0 0 auto;flex-shrink:0;width:100%;height:100%;position:relative; }
+
+.swiper-wrapper{position:relative;width:100%;height:100%;z-index:1;display:-webkit-box;display:-moz-box;display:-ms-flexbox;-webkit-transition-property:-webkit-transform;-moz-transition-property:-moz-transform;-o-transition-property:-o-transform;-ms-transition-property:-ms-transform;transition-property:transform;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}
+.swiper-wrapper{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-o-transform:translate(0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+.swiper-container-android .swiper-slide,.swiper-wrapper{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-o-transform:translate(0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+
+
+.swiper-container-horizontal>.swiper-pagination-bullets,.swiper-pagination-custom,.swiper-pagination-fraction{bottom:10px;left:0;width:100%}
+.swiper-pagination{position:absolute;text-align:center;-webkit-transition:.3s;-moz-transition:.3s;-o-transition:.3s;transition:.3s;-webkit-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);z-index:10}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin:0 5px}
+.swiper-pagination-clickable .swiper-pagination-bullet{cursor:pointer}
+.swiper-pagination-bullet{width:8px;height:8px;display:inline-block;border-radius:100%;border: 1px solid #fff; background:none; opacity:1}
+.swiper-pagination-bullet-active{opacity:1;background:#fff}
+
+/*banner end*/
+
+/*palmselect start*/
+
+.palmselect { background: #fff; padding: px2rem(15) 0; }
+.palmselect .title { font: normal px2rem(26)/px2rem(32) "Microsoft YaHei"; color:#60aa19;  }
+.palmselect .title em { display: inline-block; width:px2rem(31); height: px2rem(37); vertical-align: middle; background: url("../images/palmselect_icon.png") no-repeat center/contain; margin:0 px2rem(10); }
+.palmselect .title span.more { display: inline-block; float: right; font: normal px2rem(16)/px2rem(32) "Microsoft YaHei"; color:#b4b4b4; }
+
+.palmselectBox {  width: 100%; height: px2rem(245); margin:0 auto; margin-top:px2rem(10);position:relative;overflow:hidden;z-index:1; }
+.palmselectBox .swiper-slide {width: px2rem(168); height: px2rem(243); border:1px solid #ddd;text-align:center; position: relative; flex-shrink: 0;/* display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center; */}
+
+.palmselect_list { overflow: hidden; }
+.palmselect_pic,.palmselect_pic img { width: px2rem(168); height: px2rem(170); border: 0 none; position: relative; }
+.palmselect_title { position: absolute; bottom: 0; right: px2rem(0); background: #60aa19; padding:0 px2rem(5) px2rem(0) px2rem(10); border-radius: px2rem(20) 0 0 px2rem(20); font: normal px2rem(12)/px2rem(29) "Microsoft YaHei"; color: #fff; }
+
+.palmselect_promotion { font: normal px2rem(28)/px2rem(42) "Microsoft YaHei"; color:#000; }
+.palmselect_actual { font:normal px2rem(24)/px2rem(30) "Microsoft YaHei"; color: #aaa; text-decoration:line-through; }
+
+/*palmselect start*/

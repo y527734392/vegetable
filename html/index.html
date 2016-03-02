@@ -1,0 +1,112 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>首页</title>
+	<link type="text/css" rel="stylesheet" href="../css/normalize.css">
+	<!--<link type="text/css" rel="stylesheet" href="../css/swiper-3.3.1.min.css">-->
+	<link type="text/css" rel="stylesheet" href="../css/media.css">
+	<link type="text/css" rel="stylesheet" href="../css/common.css">
+	<link type="text/css" rel="stylesheet" href="../css/index.css">
+	<script type="text/javascript" src="../js/iscroll.js"></script>
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="../js/swiper.min.js"></script>
+	<script type="text/javascript">
+		var myScroll;
+		function loaded(){
+			myScroll = new IScroll('#wrapper', { mouseWheel: true, click: true });
+		}
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+		$(function(){
+			loaded();
+
+			var swiper = new Swiper('.banner', {
+				pagination: '.swiper-pagination',
+				loop:true,
+				paginationClickable: true,
+				//autoplay:3000
+			});
+			var palmselect = new Swiper('.palmselectBox', {
+				//pagination: '.swiper-pagination',
+				slidesPerView : 'auto',
+				//paginationClickable: true,
+				spaceBetween: 10
+			});
+		})
+	</script>
+</head>
+<body>
+<div id="header">
+	<a class="logo" href="javascript:;"><img src="../images/logo.png" width="100%"></a><input type="text"><p><a href="javascript:;">登录</a></p>
+</div>
+
+<div id="wrapper">
+	<div class="slide_box">
+		<!--banner begin-->
+		<div class="banner swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="../images/banner_1.jpg" width="100%"></div>
+				<div class="swiper-slide"><img src="../images/banner_1.jpg" width="100%"></div>
+				<div class="swiper-slide"><img src="../images/banner_1.jpg" width="100%"></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<!--banner end-->
+
+		<!--掌上精选 begin-->
+		<div class="palmselect">
+			<h2 class="title clearfix"><em></em>掌上精选<span class="more">更多精选></span></h2>
+			<div class="palmselectBox swiper-container">
+				<div class="swiper-wrapper">
+					<div class="palmselect_list swiper-slide">
+						<div class="palmselect_pic"><img src="../images/palmselect_pic.jpg"><p class="palmselect_title"><em></em>妇女节</p></div>
+						<p class="palmselect_promotion">￥70.0</p>
+						<p class="palmselect_actual">￥170.0</p>
+					</div>
+					<div class="palmselect_list swiper-slide">
+						<div class="palmselect_pic"><img src="../images/palmselect_pic.jpg"><p class="palmselect_title"><em></em>妇女节</p></div>
+						<p class="palmselect_promotion">￥30.0</p>
+						<p class="palmselect_actual">￥170.0</p>
+					</div>
+					<div class="palmselect_list swiper-slide">
+						<div class="palmselect_pic"><img src="../images/palmselect_pic.jpg"><p class="palmselect_title"><em></em>妇女节</p></div>
+						<p class="palmselect_promotion">￥50.0</p>
+						<p class="palmselect_actual">￥170.0</p>
+					</div>
+					<div class="palmselect_list swiper-slide">
+						<div class="palmselect_pic"><img src="../images/palmselect_pic.jpg"><p class="palmselect_title"><em></em>妇女节</p></div>
+						<p class="palmselect_promotion">￥60.0</p>
+						<p class="palmselect_actual">￥170.0</p>
+					</div>
+					<div class="palmselect_list swiper-slide">
+						<div class="palmselect_pic"><img src="../images/palmselect_pic.jpg"><p class="palmselect_title"><em></em>妇女节</p></div>
+						<p class="palmselect_promotion">￥10.0</p>
+						<p class="palmselect_actual">￥170.0</p>
+					</div>
+					<div class="palmselect_list swiper-slide">
+						<div class="palmselect_pic"><img src="../images/palmselect_pic.jpg"><p class="palmselect_title"><em></em>妇女节</p></div>
+						<p class="palmselect_promotion">￥110.0</p>
+						<p class="palmselect_actual">￥170.0</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--掌上精选 end-->
+
+		<!--中banner begin-->
+		<div><img src="../images/middleBanner.jpg"></div>
+		<!--中banner end-->
+
+		<!--scroll-->
+		<div style="height: 1000px"></div>
+	</div>
+
+</div>
+
+
+<div id="footer"></div>
+</body>
+</html>
