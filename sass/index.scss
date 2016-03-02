@@ -28,10 +28,10 @@ body { background: #c4c4c4; }
 
 /*palmselect start*/
 
-.palmselect { background: #fff; padding: px2rem(15) 0; }
-.palmselect .title { font: normal px2rem(26)/px2rem(32) "Microsoft YaHei"; color:#60aa19;  }
-.palmselect .title em { display: inline-block; width:px2rem(31); height: px2rem(37); vertical-align: middle; background: url("../images/palmselect_icon.png") no-repeat center/contain; margin:0 px2rem(10); }
-.palmselect .title span.more { display: inline-block; float: right; font: normal px2rem(16)/px2rem(32) "Microsoft YaHei"; color:#b4b4b4; }
+.palmselect { background: #fff; padding: px2rem(15) 0; margin-bottom: px2rem(15);}
+.index_title { font: normal px2rem(26)/px2rem(32) "Microsoft YaHei"; color:#60aa19;  }
+.palmselect .index_title em { display: inline-block; width:px2rem(31); height: px2rem(37); vertical-align: middle; background: url("../images/palmselect_icon.png") no-repeat center/contain; margin:0 px2rem(10); }
+.index_title span.more { display: inline-block; float: right; font: normal px2rem(16)/px2rem(32) "Microsoft YaHei"; color:#b4b4b4; }
 
 .palmselectBox {  width: 100%; height: px2rem(245); margin:0 auto; margin-top:px2rem(10);position:relative;overflow:hidden;z-index:1; }
 .palmselectBox .swiper-slide {width: px2rem(168); height: px2rem(243); border:1px solid #ddd;text-align:center; position: relative; flex-shrink: 0;/* display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center; */}
@@ -43,4 +43,22 @@ body { background: #c4c4c4; }
 .palmselect_promotion { font: normal px2rem(28)/px2rem(42) "Microsoft YaHei"; color:#000; }
 .palmselect_actual { font:normal px2rem(24)/px2rem(30) "Microsoft YaHei"; color: #aaa; text-decoration:line-through; }
 
-/*palmselect start*/
+/*palmselect end*/
+
+/*middleBanne start*/
+.middleBanner { width: 100%; height: px2rem(225); overflow: hidden; margin-bottom: px2rem(15); }
+.middleBanner img { width: 100%; height: px2rem(225); border:0 none; }
+/*middleBanne end*/
+
+/*hotsell start*/
+.hotSell { background: #fff; padding: px2rem(15) 0;}
+.hotSell .index_title em { display: inline-block; width:px2rem(31); height: px2rem(37); vertical-align: middle; background: url("../images/hotsell_icon.png") no-repeat center/contain; margin:0 px2rem(10); }
+.hotSell_con { padding-top: px2rem(15); }
+.hotSell_list { height: px2rem(200); border-top: 1px solid #ddd; margin-bottom: px2rem(10); }
+.hotSell_list a { display: block; }
+.hotSellL_pic img{ width: px2rem(200); height: 100%; margin-right: px2rem(25);  }
+.hotSellL_info { width: px2rem(415); height: px2rem(200); color:#000;}
+.hotSellL_info .hotSellL_title { margin: px2rem(15) px2rem(15) px2rem(30) 0; font: normal px2rem(24)/px2rem(36) "Microsoft YaHei"; color: #222; }
+.hotSellL_info .hotSellL_money { font: bold px2rem(36)/px2rem(49) "Microsoft YaHei"; color: #ff4400; padding-bottom: px2rem(10); }
+.hotSellL_info .hotSellL_evaluation { font: normal px2rem(18)/px2rem(27) "Microsoft YaHei"; color: #aaa;}
+/*hotsell end*/

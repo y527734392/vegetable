@@ -8,12 +8,14 @@ img {border:0; vertical-align: middle;}
 .clear{clear:both}
 .clearfix:after{display:block;font-size:0;content:".";clear:both;height:0;visibility:hidden}
 .clearfix{*height:1%}
+.fl { float: left;}
+.fr { float: right;}
 
 /*header  footer begin*/
-#header {position: absolute;z-index: 2;	top: 0;left: 0;width: 100%;height: px2rem(70); background:rgba(80,255,0,0);color: #eee;font-size: px2rem(20); font-weight: bold;}
+#header {position: absolute;z-index: 2;	top: 0;left: 0;width: 100%;height: px2rem(70); background:rgba(0,0,0,0.6);color: #eee;font-size: px2rem(20); font-weight: bold;}
 #header a.logo { display: inline-block; width: px2rem(95); height:px2rem(35); padding:px2rem(0) px2rem(20) 0 px2rem(15);}
 #header input { width: px2rem(430); height: px2rem(45); padding-left: px2rem(10); margin-right: px2rem(15); color:#000; font: normal px2rem(24)/px2rem(45) "Microsoft YaHei"; border: none 0; border-radius: px2rem(20); }
 #header p { display: inline-block; font: normal px2rem(26)/px2rem(70) "Microsoft YaHei"; }
 
-#footer {position: absolute;z-index: 2;bottom: 0;left: 0;width: 100%;height:px2rem(48);background: #444;padding: 0;border-top: 1px solid #444;}
+#footer {position: absolute;z-index: 2;bottom: 0;left: 0;width: 100%; height:px2rem(85); background: #444;padding: 0;border-top: 1px solid #444;}
 /*header  footer end*/
