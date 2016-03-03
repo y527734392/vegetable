@@ -14,7 +14,8 @@ a {
 
 img {
   border: 0;
-  vertical-align: middle; }
+  vertical-align: middle;
+  display: block; }
 
 .clear {
   clear: both; }
@@ -79,6 +80,32 @@ img {
   background: #444;
   padding: 0;
   border-top: 1px solid #444; }
+
+#footer ul {
+  padding-top: 0.625rem; }
+
+#footer li a {
+  display: block; }
+
+#footer li {
+  float: left;
+  width: 5.33333rem;
+  height: 2.70833rem; }
+
+#footer li img {
+  width: 1.45833rem;
+  border: 0 none;
+  margin: auto; }
+
+#footer li p {
+  width: 100%;
+  font: normal 0.75rem/1.16667rem "Microsoft YaHei";
+  color: #aaa;
+  margin: auto;
+  text-align: center; }
+
+#footer li.active p {
+  color: #10f9b7; }
 
 /*header  footer end*/
 
