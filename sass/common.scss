@@ -11,17 +11,15 @@ img {border:0; vertical-align: middle; display: block;}
 .fl { float: left;}
 .fr { float: right;}
 
-/*header  footer begin*/
-#header {position: absolute;z-index: 2;	top: 0;left: 0;width: 100%;height: px2rem(70); background:rgba(0,0,0,0.6);color: #eee;font-size: px2rem(20); font-weight: bold;}
-#header a.logo { display: inline-block; width: px2rem(95); height:px2rem(35); padding:px2rem(0) px2rem(20) 0 px2rem(15);}
-#header input { width: px2rem(430); height: px2rem(45); padding-left: px2rem(10); margin-right: px2rem(15); color:#000; font: normal px2rem(24)/px2rem(45) "Microsoft YaHei"; border: none 0; border-radius: px2rem(20); }
-#header p { display: inline-block; font: normal px2rem(26)/px2rem(70) "Microsoft YaHei"; }
-
-#footer {position: absolute;z-index: 2;bottom: 0;left: 0;width: 100%; height:px2rem(85); background: #444;padding: 0;border-top: 1px solid #444;}
-#footer ul { padding-top: px2rem(15); }
-#footer li a { display: block; }
-#footer li { float: left; width: px2rem(128); height: px2rem(65); }
-#footer li img { width: px2rem(35); border: 0 none; margin: auto; }
-#footer li p { width: 100%; font:normal px2rem(18)/px2rem(28) "Microsoft YaHei"; color: #aaa; margin: auto; text-align: center;}
-#footer li.active p { color: #10f9b7; }
-/*header  footer end*/
+/*transition*/
+.css {
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+.css {
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}

@@ -1,0 +1,119 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>详情</title>
+	<link type="text/css" rel="stylesheet" href="../css/normalize.css">
+	<link type="text/css" rel="stylesheet" href="../css/media.css">
+	<link type="text/css" rel="stylesheet" href="../css/common.css">
+	<link type="text/css" rel="stylesheet" href="../css/detail.css">
+	<script type="text/javascript" src="../js/iscroll.js"></script>
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="../js/swiper.min.js"></script>
+	<script type="text/javascript">
+		var myScroll;
+		function loaded(){
+			myScroll = new IScroll('#wrapper', { mouseWheel: true, click: true });
+		}
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+		$(function(){
+			loaded(); //执行iscroll
+			//banner silder
+			var swiper = new Swiper('.banner', {
+				pagination: '.swiper-pagination',
+				loop:true,
+				paginationClickable: true,
+				onSlideChangeEnd: function(swiper){
+				//Swiper初始化了
+				console.log(swiper.activeIndex); //提示Swiper的当前索引
+				}
+				//autoplay:3000
+			});
+		});
+	</script>
+</head>
+<body>
+<div id="header" class="clearfix">
+	<a class="back fl" href="./index.html"><img src="../images/common/back.png" width="100%"></a>
+	<ul class="list_title fl clearfix">
+		<li class="fl active"><h2><a href="javascript:;">商品</a></h2><p></p></li>
+		<li class="fl"><h2><a href="javascript:;">详情</a></h2><p></p></li>
+		<li class="fl"><h2><a href="javascript:;">评价</a></h2><p></p></li>
+	</ul>
+	<ul class="set_title fr clearfix">
+		<li class="fl"><a href="javascript:;"><img src="../images/common/trace.png" width="100%"></a></li>
+		<li class="fl"><a href="javascript:;"><img src="../images/common/more_homesearch.png" width="100%"></a></li>
+	</ul>
+</div>
+
+<div id="wrapper">
+	<div class="slide_box">
+		<!--banner begin-->
+		<div class="banner swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="../images/detail/banner.jpg" width="100%"></div>
+				<div class="swiper-slide"><img src="../images/detail/banner.jpg" width="100%"></div>
+				<div class="swiper-slide"><img src="../images/detail/banner.jpg" width="100%"></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<!--banner end-->
+
+		<!--shopping title begin-->
+		<div class="shopTitle">
+			<a class="clearfix" href="javascript:;">
+				<p class="shopTitle_txt fl">山东烟台苹果80#以上5斤装 水果新新鲜 红富士苹果5斤12个包邮装新包装</p>
+				<div class="goinfo fr"><img src="../images/detail/goinfo.png" width="100%"></div>
+			</a>
+		</div>
+		<!--shopping title end-->
+
+		<!--shopping money begin-->
+		<div class="shopMoney">
+			<p><span class="shopping_currency">￥</span><span class="shopping_money">79.90</span></p>
+			<div class="phone_only"><img src="../images/detail/phone_only.jpg" width="100%"></div>
+		</div>
+		<!--shopping money end-->
+
+		<!--shopping number begin-->
+		<div class="shopNum clearfix">
+			<p class="shopNum_txt fl">数量</p>
+			<div class="shopNum_plnum fl">
+				<span class="plus fl">-</span><input class="fl" type="tel" value="1"><span class="less fl">+</span>
+			</div>
+		</div>
+		<!--shopping number end-->
+
+		<!--shopping prompt begin-->
+
+		<ul class="shopPrompt">
+			<li><em>运费</em><span>单笔订单不满59元，收运费6元</span></li>
+			<li><em>服务</em><span>由logo发货并提供售后服务</span></li>
+			<li><em>提示</em><span>不支持7天无理由退货</span></li>
+		</ul>
+
+		<!--shopping info end-->
+	</div>
+
+</div>
+
+
+<div id="footer">
+	<ul class="clearfix fl">
+		<li class="active">
+			<a href="tel:13161326122"><img src="../images/detail/icon_phone.png"><p>电话客服</p></a>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="../images/detail/icon_foucs.png"><p>关注</p></a>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="../images/detail/icon_shopping.png"><p>购物车</p></a>
+		</li>
+	</ul>
+	<div class="addCart fl"><a href="javascript:;">加入购物车</a></div>
+</div>
+</body>
+</html>

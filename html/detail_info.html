@@ -1,0 +1,75 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>详情</title>
+	<link type="text/css" rel="stylesheet" href="../css/normalize.css">
+	<link type="text/css" rel="stylesheet" href="../css/media.css">
+	<link type="text/css" rel="stylesheet" href="../css/common.css">
+	<link type="text/css" rel="stylesheet" href="../css/detail.css">
+	<script type="text/javascript" src="../js/iscroll.js"></script>
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="../js/swiper.min.js"></script>
+	<script type="text/javascript">
+		var myScroll;
+		function loaded(){
+			myScroll = new IScroll('#wrapper', { mouseWheel: true, click: true });
+		}
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+		$(function(){
+			loaded();
+
+//			var swiper = new Swiper('.banner', {
+//				pagination: '.swiper-pagination',
+//				loop:true,
+//				paginationClickable: true,
+//				//autoplay:3000
+//			});
+
+		})
+	</script>
+</head>
+<body>
+<div id="header" class="clearfix">
+	<a class="back fl" href="./index.html"><img src="../images/common/back.png" width="100%"></a>
+	<ul class="list_title fl clearfix">
+		<li class="fl"><h2><a href="javascript:;">商品</a></h2><p></p></li>
+		<li class="fl active"><h2><a href="javascript:;">详情</a></h2><p></p></li>
+		<li class="fl"><h2><a href="javascript:;">评价</a></h2><p></p></li>
+	</ul>
+	<ul class="set_title fr clearfix">
+		<li class="fl"><a href="javascript:;"><img src="../images/common/trace.png" width="100%"></a></li>
+		<li class="fl"><a href="javascript:;"><img src="../images/common/more_homesearch.png" width="100%"></a></li>
+	</ul>
+</div>
+
+<div id="wrapper">
+	<div class="slide_box">
+		<!--pic more start-->
+
+
+		<!--pic more end-->
+	</div>
+
+</div>
+
+
+<div id="footer">
+	<ul class="clearfix fl">
+		<li class="active">
+			<a href="tel:13161326122"><img src="../images/detail/icon_phone.png"><p>电话客服</p></a>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="../images/detail/icon_foucs.png"><p>关注</p></a>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="../images/detail/icon_shopping.png"><p>购物车</p></a>
+		</li>
+	</ul>
+	<div class="addCart fl"><a href="javascript:;">加入购物车</a></div>
+</div>
+</body>
+</html>
