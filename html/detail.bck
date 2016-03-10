@@ -32,6 +32,144 @@
 				paginationClickable: true,
 				autoplay:3000
 			});
+//			var warp = new Swiper('.warp', {
+//				onSlideNextStart: function(swiper){
+//					detail_info.backTop();
+//					switch (swiper.activeIndex%3){
+//						case 0:
+//							console.log(0);
+//							break;
+//						case 1:
+//							myScroll.destroy();
+//							detail_info.changeBoxH(detail_info.pic_H(swiper.activeIndex));
+//							break;
+//					}
+//				},
+//				onSlideNextEnd:function(){
+//
+//					detail_info.img_load();
+//					//loaded();
+//				},
+//				onSlidePrevStart:function(swiper){
+//					detail_info.backTop();
+//					switch (swiper.activeIndex%3){
+//						case 0:
+//							console.log(0);
+//							break;
+//						case 1:
+//							myScroll.destroy();
+//							detail_info.changeBoxH(detail_info.pic_H(swiper.activeIndex));
+//							break;
+//					}
+//				}
+//			});
+//
+//			function aa(obj,index){
+//				var _self = obj,ind=index;
+//				//console.log(ind);
+//				//console.info(_self.eq(ind));
+//				function init(){
+//
+//				}
+//				init();
+//				//console.log(sumHeight(_self.eq(ind)));
+//				function suminfoHeight(obj){
+//					var sumH=0;
+//					for(var i=0;i<obj.children();i++){
+//						sumH+=obj.children().eq(i).height();
+//					}
+//					return sumH;
+//				}
+//				//console.log(detailInfo_height($(".detail_info")));
+//				function detailInfo_height(obj){
+//					var detailInfo_H=0;
+//					for(var i=0;i<obj.find("ul").children().length;i++){
+//						detailInfo_H += parseInt(obj.find("ul").children().eq(i).height());
+//					}
+//					return detailInfo_H;
+//
+//				}
+//				//obj.eq(i).
+//				//obj.css()
+//			}
+//
+//			detail_info = {
+//				config:{
+//					self:null,
+//					header:$("#header"),
+//					footer:$("#footer"),
+//					slide_box:$(".slide_box"),
+//					detail_list:$(".detail_list"),
+//					detail_picBox:$(".detail_picBox")
+//
+//				},
+//				init:function(obj,box){
+//					//初始 css 高度
+//					var oH =obj.css("height");
+//					obj.css({height:oH});
+//					box.css({height:oH});
+//				},
+//				pic_H:function(ind){
+//					//计算 图片详情页面 高度
+//					var picInfo_H=0;
+//					for(var i=0;i<this.config.detail_list.eq(ind).find(".detail_picBox").children().length;i++){
+//						picInfo_H += parseInt(this.config.detail_list.eq(ind).find(".detail_picBox").children().eq(i).children().height());
+//					}
+//					picInfo_H = picInfo_H+parseInt(this.config.header.css("height"))+parseInt(this.config.footer.css("height"));
+//					return picInfo_H;
+//				},
+//				detail_txt:function(){
+//
+//				},
+//				backTop:function(){
+//					//左右翻页 返回顶部
+//					myScroll.scrollTo(0, 0,500, IScroll.utils.ease.quadratic);
+//				},
+//				changeBoxH:function(heig){
+//					//slide_box 固定高度
+//					this.config.slide_box.css({height:heig});
+//				},
+//				img_load:function(){
+//					var t_img; // 定时器
+//					var isLoad = true; // 控制变量
+//
+//					// 判断图片加载状况，加载完成后回调
+//					isImgLoad(function(){
+//						console.log("www");
+//						//loaded();
+//					});
+//
+//					// 判断图片加载的函数
+//					function isImgLoad(callback){
+//						// 注意我的图片类名都是cover，因为我只需要处理cover。其它图片可以不管。
+//						// 查找所有封面图，迭代处理
+//						$('.detail_picBox img').each(function(){
+//							// 找到为0就将isLoad设为false，并退出each
+//							if(this.height === 0){
+//								isLoad = false;
+//								return false;
+//							}
+//						});
+//						// 为true，没有发现为0的。加载完毕
+//						if(isLoad){
+//							clearTimeout(t_img); // 清除定时器
+//							// 回调函数
+//							callback();
+//							// 为false，因为找到了没有加载完成的图，将调用定时器递归
+//						}else{
+//							isLoad = true;
+//							t_img = setTimeout(function(){
+//								isImgLoad(callback); // 递归扫描
+//							},500); // 我这里设置的是500毫秒就扫描一次，可以自己调整
+//						}
+//					}
+//
+//				}
+//
+//			}
+//			detail_info.init($(".detail_list"),$(".slide_box"));
+
+
 		});
 	</script>
 </head>
@@ -40,7 +178,7 @@
 	<a class="back fl" href="./index.html"><img src="../images/common/back.png" width="100%"></a>
 	<ul class="list_title fl clearfix">
 		<li class="fl active"><h2><a href="javascript:;">商品</a></h2><p></p></li>
-		<li class="fl"><h2><a href="./detail_pic.html">详情</a></h2><p></p></li>
+		<li class="fl"><h2><a href="javascript:;">详情</a></h2><p></p></li>
 		<li class="fl"><h2><a href="javascript:;">评价</a></h2><p></p></li>
 	</ul>
 	<ul class="set_title fr clearfix">

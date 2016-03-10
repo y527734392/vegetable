@@ -9,10 +9,11 @@ body {
   left: 0;
   width: 100%;
   height: 3rem;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.95);
   color: #eee;
   font-size: 0.83333rem;
-  font-weight: normal; }
+  font-weight: normal;
+  border-bottom: 1px solid #ddd; }
 
 #header a.back {
   display: block;
@@ -134,11 +135,14 @@ body {
   -o-text-size-adjust: none;
   text-size-adjust: none; }
 
+.detail_list {
+  margin: 3rem auto 3.54167rem; }
+
 /*banner start*/
 .banner {
   width: 100%;
   height: 26.66667rem;
-  margin: 3rem auto 0;
+  margin: 0 auto;
   margin-bottom: 0.41667rem;
   position: relative;
   overflow: hidden;
@@ -315,8 +319,7 @@ body {
 /*shopping number end*/
 /*shopping prompt start*/
 .shopPrompt {
-  padding: 1.04167rem 0 1.04167rem 1.04167rem;
-  margin-bottom: 3.54167rem; }
+  padding: 1.04167rem 0 1.04167rem 1.04167rem; }
 
 .shopPrompt li em {
   font: normal 1rem/1.83333rem "Microsoft YaHei";
@@ -328,5 +331,17 @@ body {
   color: #333; }
 
 /*shopping prompt end*/
+/*detail info start*/
+.detail_info {
+  width: 95%;
+  margin: auto;
+  background: none; }
+
+.detail_info img {
+  display: block;
+  width: 100%;
+  border: 0 none; }
+
+/*detail info end*/
 
 /*# sourceMappingURL=detail.css.map */

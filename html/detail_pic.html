@@ -24,14 +24,14 @@
 		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 		$(function(){
 			loaded(); //执行iscroll
-
-			//banner silder
-			var swiper = new Swiper('.banner', {
-				pagination: '.swiper-pagination',
-				loop:true,
-				paginationClickable: true,
-				autoplay:3000
-			});
+			console.log(myScroll.scrollerHeight);
+			var timer = setInterval(function () {
+				console.log(myScroll.scrollerHeight);
+				myScroll.refresh();
+			}, 100);
+			setTimeout(function(){
+				clearInterval(timer);
+			},2000)
 		});
 	</script>
 </head>
@@ -39,8 +39,8 @@
 <div id="header" class="clearfix">
 	<a class="back fl" href="./index.html"><img src="../images/common/back.png" width="100%"></a>
 	<ul class="list_title fl clearfix">
-		<li class="fl active"><h2><a href="javascript:;">商品</a></h2><p></p></li>
-		<li class="fl"><h2><a href="./detail_pic.html">详情</a></h2><p></p></li>
+		<li class="fl"><h2><a href="./detail.html">商品</a></h2><p></p></li>
+		<li class="fl active"><h2><a href="javascript:;">详情</a></h2><p></p></li>
 		<li class="fl"><h2><a href="javascript:;">评价</a></h2><p></p></li>
 	</ul>
 	<ul class="set_title fr clearfix">
@@ -52,51 +52,13 @@
 <div id="wrapper">
 	<div class="slide_box">
 		<div class="detail_list">
-			<!--banner begin-->
-			<div class="banner swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="../images/detail/banner.jpg" width="100%"></div>
-					<div class="swiper-slide"><img src="../images/detail/banner.jpg" width="100%"></div>
-					<div class="swiper-slide"><img src="../images/detail/banner.jpg" width="100%"></div>
-				</div>
-				<div class="swiper-pagination"></div>
+			<div class="detail_info">
+				<img src="http://img20.360buyimg.com/vc/jfs/t2263/233/2152461847/192422/19404dc6/569efd53Naf88cecd.jpg">
+				<img src="http://img20.360buyimg.com/vc/jfs/t2386/4/1437007091/143229/2739e852/569efd59N54cdcb1a.jpg">
+				<img src="http://img20.360buyimg.com/vc/jfs/t2410/76/2127108854/168267/9db3986f/569efd5fNe81b5e51.jpg">
+				<img src="http://img20.360buyimg.com/vc/jfs/t2527/145/1277928592/164005/df198fec/569efd6bNc19b4be7.jpg">
+				<img src="http://img20.360buyimg.com/vc/jfs/t2044/52/2126048365/149481/a11c45e6/569efd72N3205d569.jpg">
 			</div>
-			<!--banner end-->
-
-			<!--shopping title begin-->
-			<div class="shopTitle">
-				<a class="clearfix" href="javascript:;">
-					<p class="shopTitle_txt fl">山东烟台苹果80#以上5斤装 水果新新鲜 红富士苹果5斤12个包邮装新包装</p>
-					<div class="goinfo fr"><img src="../images/detail/goinfo.png" width="100%"></div>
-				</a>
-			</div>
-			<!--shopping title end-->
-
-			<!--shopping money begin-->
-			<div class="shopMoney">
-				<p><span class="shopping_currency">￥</span><span class="shopping_money">79.90</span></p>
-				<div class="phone_only"><img src="../images/detail/phone_only.jpg" width="100%"></div>
-			</div>
-			<!--shopping money end-->
-
-			<!--shopping number begin-->
-			<div class="shopNum clearfix">
-				<p class="shopNum_txt fl">数量</p>
-				<div class="shopNum_plnum fl">
-					<span class="plus fl">-</span><input class="fl" type="tel" value="1"><span class="less fl">+</span>
-				</div>
-			</div>
-			<!--shopping number end-->
-
-			<!--shopping prompt begin-->
-
-			<ul class="shopPrompt">
-				<li><em>运费</em><span>单笔订单不满59元，收运费6元</span></li>
-				<li><em>服务</em><span>由logo发货并提供售后服务</span></li>
-				<li><em>提示</em><span>不支持7天无理由退货</span></li>
-			</ul>
-
-			<!--shopping info end-->
 		</div>
 	</div>
 
