@@ -13,7 +13,7 @@ body {
   color: #eee;
   font-size: 0.83333rem;
   font-weight: normal;
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #000; }
 
 #header a.back {
   display: block;
@@ -343,5 +343,48 @@ body {
   border: 0 none; }
 
 /*detail info end*/
+/*detail comment satrt*/
+.detail_cm_box {
+  margin: 3rem auto 3.54167rem;
+  background: #eee; }
+
+.detail_cm_list {
+  width: 95%;
+  margin: 0 auto 0.625rem;
+  padding: 25px 2.5%;
+  background: #fff; }
+
+.detail_cml_title {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 1.25rem; }
+
+.detail_cmlt_pic {
+  width: 1.95833rem;
+  height: 1.95833rem;
+  margin-right: 0.625rem; }
+
+.detail_cmlt_pic img {
+  display: block;
+  width: 100%; }
+
+.detail_cmlt_name {
+  font: normal 0.83333rem/1.95833rem "Microsoft YaHei";
+  color: #000; }
+
+.detail_cmlt_time {
+  font: normal 0.83333rem/1.95833rem "Microsoft YaHei";
+  color: #aaa; }
+
+.detail_cmlc_txt {
+  min-height: 3.33333rem;
+  font: normal 0.91667rem/1.25rem "Microsoft YaHei";
+  color: #222; }
+
+.detail_cmlc_shopName, .detail_cmlc_shopTime {
+  font: normal 0.75rem/1.16667rem "Microsoft YaHei";
+  color: #aaa; }
+
+/*detail comment end*/
 
 /*# sourceMappingURL=detail.css.map */

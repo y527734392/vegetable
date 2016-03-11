@@ -5,7 +5,7 @@
 body { background: #fff; }
 
 /*header  footer begin*/
-#header {position: absolute;z-index: 2;	top: 0;left: 0;width: 100%;height: px2rem(72); background:rgba(255,255,255,0.95);color: #eee;font-size: px2rem(20); font-weight: normal; border-bottom: 1px solid #ddd;}
+#header {position: absolute;z-index: 2;	top: 0;left: 0;width: 100%;height: px2rem(72); background:rgba(255,255,255,0.95);color: #eee;font-size: px2rem(20); font-weight: normal; border-bottom: 1px solid #000;}
 #header a.back { display: block; width: px2rem(70); height:px2rem(70); margin-right: px2rem(105);}
 #header .list_title li { width: px2rem(85); height: px2rem(72); text-align: center; margin-right: px2rem(15);  border: none 0; }
 #header .list_title li h2 { width: 100%; height: px2rem(68);  }
@@ -90,3 +90,18 @@ body { background: #fff; }
 .detail_info img { display: block; width: 100%; border:0 none; }
 
 /*detail info end*/
+
+/*detail comment satrt*/
+
+.detail_cm_box { margin:px2rem(72) auto  px2rem(85); background: #eee;}
+.detail_cm_list { width:95%; margin:0 auto px2rem(15); padding: 25px 2.5%; background: #fff; }
+.detail_cml_title { padding-bottom: 15px; border-bottom: 2px solid #ddd; margin-bottom: px2rem(30); }
+.detail_cmlt_pic { width: px2rem(47); height: px2rem(47); margin-right: px2rem(15);  }
+.detail_cmlt_pic img { display: block; width: 100%; }
+.detail_cmlt_name { font: normal px2rem(20)/px2rem(47) "Microsoft YaHei"; color:#000; }
+.detail_cmlt_time {  font: normal px2rem(20)/px2rem(47) "Microsoft YaHei"; color:#aaa; }
+
+.detail_cmlc_txt { min-height: px2rem(80); font: normal px2rem(22)/px2rem(30) "Microsoft YaHei"; color: #222; }
+.detail_cmlc_shopName,.detail_cmlc_shopTime { font: normal px2rem(18)/px2rem(28) "Microsoft YaHei"; color:#aaa; }
+
+/*detail comment end*/
