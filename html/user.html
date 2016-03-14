@@ -10,7 +10,7 @@
 	<!--<link type="text/css" rel="stylesheet" href="../css/swiper-3.3.1.min.css">-->
 	<link type="text/css" rel="stylesheet" href="../css/media.css">
 	<link type="text/css" rel="stylesheet" href="../css/common.css">
-	<link type="text/css" rel="stylesheet" href="../css/index.css">
+	<link type="text/css" rel="stylesheet" href="../css/user.css">
 	<script type="text/javascript" src="../js/iscroll.js"></script>
 	<script type="text/javascript" src="../js/zepto.min.js"></script>
 	<script type="text/javascript" src="../js/swiper.min.js"></script>
@@ -23,25 +23,12 @@
 		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 		$(function(){
 			loaded();
-
-			var swiper = new Swiper('.banner', {
-				pagination: '.swiper-pagination',
-				loop:true,
-				paginationClickable: true,
-				autoplay:3000
-			});
-			var palmselect = new Swiper('.palmselectBox', {
-				//pagination: '.swiper-pagination',
-				slidesPerView : 'auto',
-				//paginationClickable: true,
-				spaceBetween: 10
-			});
 		})
 	</script>
 </head>
 <body>
 <div id="header">
-	<a class="logo" href="javascript:;"><img src="../images/logo.png" width="100%"></a><input type="text"><p><a href="javascript:;">登录</a></p>
+	<div class="user_pic"></div><p>我的<p><a class="user_set" href="javascript:;"></a><a class="user_info" href="javascript:;"></a></p>
 </div>
 
 <div id="wrapper">
