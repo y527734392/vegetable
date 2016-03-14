@@ -4,7 +4,6 @@
 //weChat
 function is_weChat(){
     var ua = navigator.userAgent.toLowerCase();
-    alert(ua);
     if(ua.match(/MicroMessenger/i)=='micromessenger') {
         return true;
     }else {
