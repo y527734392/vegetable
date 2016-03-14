@@ -1,8 +1,8 @@
 /**
  * Created by muyi on 16/3/11.
  */
-//if weChat
-function is_weixn(){
+//weChat
+function is_weChat(){
     var ua = navigator.userAgent.toLowerCase();
     alert(ua);
     if(ua.match(/MicroMessenger/i)=='micromessenger') {
@@ -11,6 +11,9 @@ function is_weixn(){
         return false;
     }
 }
+if(!is_weChat()){
+    //location.href='./weChat.html';
+};
 $(function(){
-    is_weixn();
+
 });
