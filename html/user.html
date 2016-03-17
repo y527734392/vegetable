@@ -22,141 +22,153 @@
 		}
 		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 		$(function(){
+
+			for(var i=0; i<$(".regoods_list").length;i++){
+				if(i%2==1){
+					$(".regoods_list").eq(i).css("marginRight",'0');
+				}
+			}
 			loaded();
+
 		})
 	</script>
 </head>
 <body>
-<div id="header">
-	<div class="user_pic"></div><p>我的<p><a class="user_set" href="javascript:;"></a><a class="user_info" href="javascript:;"></a></p>
+<div id="header" class="clearfix">
+	<div class="user_pic fl"></div><p class="user_title fl">我的<p><a class="user_set fl" href="javascript:;"></a></p>
 </div>
 
 <div id="wrapper">
 	<div class="slide_box">
-		<!--banner begin-->
-		<div class="banner swiper-container">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide"><img src="../images/banner_1.jpg" width="100%"></div>
-				<div class="swiper-slide"><img src="../images/banner_1.jpg" width="100%"></div>
-				<div class="swiper-slide"><img src="../images/banner_1.jpg" width="100%"></div>
+
+		<!--title begin-->
+		<a class="uesr_top_title_a" href="javascript:;" >
+			<div class="uesr_top_title clearfix">
+				<div class="usertl_pic fl"></div>
+				<p class="uesrtl_name fl">登录/注册</p>
+				<p class="usertl_set fr">账户管理></p>
 			</div>
-			<div class="swiper-pagination"></div>
-		</div>
-		<!--banner end-->
+		</a>
+		<!--title end-->
 
-		<!--掌上精选 begin-->
-		<div class="palmselect">
-			<h2 class="index_title clearfix"><em></em>掌上精选<span class="more">更多精选></span></h2>
-			<div class="palmselectBox swiper-container">
-				<div class="swiper-wrapper">
-					<div class="palmselect_list swiper-slide">
-						<a href="./detail.html" style="display:block;">
-							<div class="palmselect_pic"><img src="../images/palmselect_pic.jpg"><p class="palmselect_title"><em></em>妇女节</p></div>
-							<p class="palmselect_promotion">￥70.0</p>
-							<p class="palmselect_actual">￥170.0</p>
-						</a>
-					</div>
-					<div class="palmselect_list swiper-slide">
-						<div class="palmselect_pic"><img src="../images/palmselect_pic.jpg"><p class="palmselect_title"><em></em>妇女节</p></div>
-						<p class="palmselect_promotion">￥30.0</p>
-						<p class="palmselect_actual">￥170.0</p>
-					</div>
-					<div class="palmselect_list swiper-slide">
-						<div class="palmselect_pic"><img src="../images/palmselect_pic.jpg"><p class="palmselect_title"><em></em>妇女节</p></div>
-						<p class="palmselect_promotion">￥50.0</p>
-						<p class="palmselect_actual">￥170.0</p>
-					</div>
-					<div class="palmselect_list swiper-slide">
-						<div class="palmselect_pic"><img src="../images/palmselect_pic.jpg"><p class="palmselect_title"><em></em>妇女节</p></div>
-						<p class="palmselect_promotion">￥60.0</p>
-						<p class="palmselect_actual">￥170.0</p>
-					</div>
-					<div class="palmselect_list swiper-slide">
-						<div class="palmselect_pic"><img src="../images/palmselect_pic.jpg"><p class="palmselect_title"><em></em>妇女节</p></div>
-						<p class="palmselect_promotion">￥10.0</p>
-						<p class="palmselect_actual">￥170.0</p>
-					</div>
-					<div class="palmselect_list swiper-slide">
-						<div class="palmselect_pic"><img src="../images/palmselect_pic.jpg"><p class="palmselect_title"><em></em>妇女节</p></div>
-						<p class="palmselect_promotion">￥110.0</p>
-						<p class="palmselect_actual">￥170.0</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!--掌上精选 end-->
+		<!--order begin-->
 
-		<!--中banner begin-->
-		<div class="middleBanner"><img src="../images/middleBanner.jpg"></div>
-		<!--中banner end-->
-
-		<!--热卖单品 begin-->
-		<div class="hotSell">
-			<h2 class="index_title clearfix"><em></em>热卖单品<span class="more">更多单品></span></h2>
-			<ul class="hotSell_con">
-				<li class="hotSell_list">
-					<a class="clearfix" href="javascript:;">
-						<div class="hotSellL_pic fl"><img src="../images/hotsell_pic.jpg"></div>
-						<div class="hotSellL_info fl">
-							<h3 class="hotSellL_title">禾帆 正宗新疆阿克苏冰糖心苹果净重10斤装 新鲜大苹果水果红富士</h3>
-							<p class="hotSellL_money">￥&nbsp;70.00</p>
-							<p class="hotSellL_evaluation">98%好评&#12288;27319人</p>
-						</div>
+		<div class="user_order clearfix">
+			<ul class="usero_l fl clearfix">
+				<li class="fl">
+					<a href="javascript:;">
+						<div class="usero_iconAll usero_pay"></div>
+						<p>待付款</p>
 					</a>
 				</li>
-				<li class="hotSell_list">
-					<a class="clearfix" href="javascript:;">
-						<div class="hotSellL_pic fl"><img src="../images/hotsell_pic.jpg"></div>
-						<div class="hotSellL_info fl">
-							<h3 class="hotSellL_title">禾帆 正宗新疆阿克苏冰糖心苹果净重10斤装 新鲜大苹果水果红富士</h3>
-							<p class="hotSellL_money">￥&nbsp;70.00</p>
-							<p class="hotSellL_evaluation">98%好评&#12288;27319人</p>
-						</div>
+				<li class="fl">
+					<a href="javascript:;">
+						<div class="usero_iconAll usero_sgoods"></div>
+						<p>待收货</p>
 					</a>
 				</li>
-				<li class="hotSell_list">
-					<a class="clearfix" href="javascript:;">
-						<div class="hotSellL_pic fl"><img src="../images/hotsell_pic.jpg"></div>
-						<div class="hotSellL_info fl">
-							<h3 class="hotSellL_title">禾帆 正宗新疆阿克苏冰糖心苹果净重10斤装 新鲜大苹果水果红富士</h3>
-							<p class="hotSellL_money">￥&nbsp;70.00</p>
-							<p class="hotSellL_evaluation">98%好评&#12288;27319人</p>
-						</div>
-					</a>
-				</li>
-				<li class="hotSell_list">
-					<a class="clearfix" href="javascript:;">
-						<div class="hotSellL_pic fl"><img src="../images/hotsell_pic.jpg"></div>
-						<div class="hotSellL_info fl">
-							<h3 class="hotSellL_title">禾帆 正宗新疆阿克苏冰糖心苹果净重10斤装 新鲜大苹果水果红富士</h3>
-							<p class="hotSellL_money">￥&nbsp;70.00</p>
-							<p class="hotSellL_evaluation">98%好评&#12288;27319人</p>
-						</div>
-					</a>
-				</li>
-				<li class="hotSell_list">
-					<a class="clearfix" href="javascript:;">
-						<div class="hotSellL_pic fl"><img src="../images/hotsell_pic.jpg"></div>
-						<div class="hotSellL_info fl">
-							<h3 class="hotSellL_title">禾帆 正宗新疆阿克苏冰糖心苹果净重10斤装 新鲜大苹果水果红富士</h3>
-							<p class="hotSellL_money">￥&nbsp;70.00</p>
-							<p class="hotSellL_evaluation">98%好评&#12288;27319人</p>
-						</div>
-					</a>
-				</li>
-				<li class="hotSell_list">
-					<a class="clearfix" href="javascript:;">
-						<div class="hotSellL_pic fl"><img src="../images/hotsell_pic.jpg"></div>
-						<div class="hotSellL_info fl">
-							<h3 class="hotSellL_title">禾帆 正宗新疆阿克苏冰糖心苹果净重10斤装 新鲜大苹果水果红富士</h3>
-							<p class="hotSellL_money">￥&nbsp;70.00</p>
-							<p class="hotSellL_evaluation">98%好评&#12288;27319人</p>
-						</div>
+				<li class="fl">
+					<a href="javascript:;">
+						<div class="usero_iconAll usero_comment"></div>
+						<p>待评价</p>
 					</a>
 				</li>
 			</ul>
+			<div class="usero_r fl">
+				<a href="javascript:;">
+					<div class="usero_iconAll usero_allorder"></div>
+					<p>我的订单></p>
+				</a>
+			</div>
 		</div>
-		<!--热卖单品 end-->
+
+		<!--order end-->
+
+		<!--record begin-->
+
+		<ul class="record clearfix">
+			<li class="fl">
+				<a href="javascript:;">
+					<div class="userr_iconAll userr_focus"></div>
+					<p>商品关注</p>
+				</a>
+			</li>
+			<li class="fl">
+				<a href="javascript:;">
+					<div class="userr_iconAll userr_re"></div>
+					<p>浏览记录</p>
+				</a>
+			</li>
+			<li class="fl">
+				<a href="javascript:;">
+					<div class="userr_iconAll userr_service"></div>
+					<p>服务/反馈</p>
+				</a>
+			</li>
+		</ul>
+
+		<!--record end-->
+
+		<!--recommend start-->
+
+		<div class="recommend">
+			<div class="rec_title"><span>&uarr;</span>为你推荐</div>
+			<ul class="regoods_box clearfix">
+				<li class="regoods_list fl">
+					<div><img src=""></div>
+					<h2>山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界 前五百强企业</h2>
+					<p><em class="u_unit">￥</em><span class="u_int">172.</span><span class="u_dec">35</span></p>
+				</li>
+				<li class="regoods_list fl">
+					<div><img src=""></div>
+					<h2>111111111111111山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界 前五百强企业</h2>
+					<p><em class="u_unit">￥</em><span class="u_int">172.</span><span class="u_dec">35</span></p>
+				</li>
+				<li class="regoods_list fl">
+					<div><img src=""></div>
+					<h2>山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界 前五百强企业</h2>
+					<p><em class="u_unit">￥</em><span class="u_int">172.</span><span class="u_dec">35</span></p>
+				</li>
+				<li class="regoods_list fl">
+					<div><img src=""></div>
+					<h2>111111111111111山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界 前五百强企业</h2>
+					<p><em class="u_unit">￥</em><span class="u_int">172.</span><span class="u_dec">35</span></p>
+				</li>
+				<li class="regoods_list fl">
+					<div><img src=""></div>
+					<h2>山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界 前五百强企业</h2>
+					<p><em class="u_unit">￥</em><span class="u_int">172.</span><span class="u_dec">35</span></p>
+				</li>
+				<li class="regoods_list fl">
+					<div><img src=""></div>
+					<h2>111111111111111山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界 前五百强企业</h2>
+					<p><em class="u_unit">￥</em><span class="u_int">172.</span><span class="u_dec">35</span></p>
+				</li>
+				<li class="regoods_list fl">
+					<div><img src=""></div>
+					<h2>山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界 前五百强企业</h2>
+					<p><em class="u_unit">￥</em><span class="u_int">172.</span><span class="u_dec">35</span></p>
+				</li>
+				<li class="regoods_list fl">
+					<div><img src=""></div>
+					<h2>111111111111111山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界 前五百强企业</h2>
+					<p><em class="u_unit">￥</em><span class="u_int">172.</span><span class="u_dec">35</span></p>
+				</li>
+				<li class="regoods_list fl">
+					<div><img src=""></div>
+					<h2>山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界 前五百强企业</h2>
+					<p><em class="u_unit">￥</em><span class="u_int">172.</span><span class="u_dec">35</span></p>
+				</li>
+				<li class="regoods_list fl">
+					<div><img src=""></div>
+					<h2>111111111111111山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界山东大苹果销量领先全世界 前五百强企业</h2>
+					<p><em class="u_unit">￥</em><span class="u_int">172.</span><span class="u_dec">35</span></p>
+				</li>
+
+			</ul>
+		</div>
+
+		<!--recommend end-->
 
 	</div>
 
@@ -165,8 +177,8 @@
 
 <div id="footer">
 	<ul class="clearfix">
-		<li class="active">
-			<a href="javascript:;"><img src="../images/icon_home_a.png"><p>首页</p></a>
+		<li>
+			<a href="./index.html"><img src="../images/icon_home.png"><p>首页</p></a>
 		</li>
 		<li>
 			<a href="javascript:;"><img src="../images/icon_list.png"><p>分类</p></a>
@@ -177,8 +189,8 @@
 		<li>
 			<a href="javascript:;"><img src="../images/icon_shopping.png"><p>购物车</p></a>
 		</li>
-		<li>
-			<a href="javascript:;"><img src="../images/icon_my.png"><p>我的</p></a>
+		<li class="active">
+			<a href="javascript:;"><img src="../images/icon_my_a.png"><p>我的</p></a>
 		</li>
 	</ul>
 </div>
