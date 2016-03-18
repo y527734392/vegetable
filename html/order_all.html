@@ -1,0 +1,115 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>全部订单</title>
+	<link type="text/css" rel="stylesheet" href="../css/normalize.css">
+	<!--<link type="text/css" rel="stylesheet" href="../css/swiper-3.3.1.min.css">-->
+	<link type="text/css" rel="stylesheet" href="../css/media.css">
+	<link type="text/css" rel="stylesheet" href="../css/common.css">
+	<link type="text/css" rel="stylesheet" href="../css/order.css">
+	<script type="text/javascript" src="../js/iscroll.js"></script>
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="../js/swiper.min.js"></script>
+	<script type="text/javascript" src="../js/baes.js"></script>
+	<script type="text/javascript">
+		var myScroll;
+		function loaded(){
+			myScroll = new IScroll('#wrapper', { mouseWheel: true, click: true });
+		}
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+		$(function(){
+
+//			for(var i=0; i<$(".regoods_list").length;i++){
+//				if(i%2==1){
+//					$(".regoods_list").eq(i).css("marginRight",'0');
+//				}
+//			}
+			loaded();
+
+		})
+	</script>
+</head>
+<body>
+<div id="header" class="clearfix">
+	<div class="user_pic fl"></div><p class="user_title fl">我的<p><a class="user_set fl" href="javascript:;"></a></p>
+</div>
+
+<div id="wrapper">
+	<div class="slide_box">
+		<ul class="order_wait order_pay">
+			<li>
+				<h2 class="orderWait_state clearfix">商家<span>待付款</span></h2>
+				<div class="orderWait_goodspic clearfix">
+					<div><img src=""></div>
+					<div><img src=""></div>
+				</div>
+				<div class="orderWait_money clearfix">
+					<p class="orderWait_minfo fl"><span class="u_title">实付款:</span><em class="u_unit">￥</em><span class="u_int">172.</span><span class="u_dec">35</span></p>
+					<a class="order_go orderWait_gopay fr" href="javascript:;">去支付</a>
+				</div>
+			</li>
+			<li>
+				<h2 class="orderWait_state clearfix">商家<span>待收货</span></h2>
+				<div class="orderWait_goodspic clearfix">
+					<div><img src=""></div>
+					<div><img src=""></div>
+				</div>
+				<div class="orderWait_money clearfix">
+					<p class="orderWait_minfo fl"><span class="u_title">实付款:</span><em class="u_unit">￥</em><span class="u_int">172.</span><span class="u_dec">35</span></p>
+					<a class="order_go orderWait_gopay fr" href="javascript:;">确认收货</a>
+				</div>
+			</li>
+			<li>
+				<h2 class="orderWait_state clearfix">商家<span>待收货</span></h2>
+				<div class="orderWait_goodspic clearfix">
+					<div><img src=""></div>
+					<div><img src=""></div>
+				</div>
+				<div class="orderWait_money clearfix">
+					<p class="orderWait_minfo fl"><span class="u_title">实付款:</span><em class="u_unit">￥</em><span class="u_int">172.</span><span class="u_dec">35</span></p>
+					<a class="order_go orderWait_gopay fr" href="javascript:;">确认收货</a>
+				</div>
+			</li>
+			<li>
+				<h2 class="orderWait_state clearfix">商家<span>待付款</span></h2>
+				<div class="orderWait_goodspic clearfix">
+					<div><img src=""></div>
+					<div><img src=""></div>
+				</div>
+				<div class="orderWait_money clearfix">
+					<p class="orderWait_minfo fl"><span class="u_title">实付款:</span><em class="u_unit">￥</em><span class="u_int">172.</span><span class="u_dec">35</span></p>
+					<a class="order_go orderWait_gopay fr" href="javascript:;">去支付</a>
+				</div>
+			</li>
+		</ul>
+
+	</div>
+
+</div>
+
+
+<div id="footer">
+	<ul class="clearfix">
+		<li>
+			<a href="./index.html"><img src="../images/icon_home.png"><p>首页</p></a>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="../images/icon_list.png"><p>分类</p></a>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="../images/icon_found.png"><p>发现</p></a>
+		</li>
+		<li>
+			<a href="javascript:;"><img src="../images/icon_shopping.png"><p>购物车</p></a>
+		</li>
+		<li class="active">
+			<a href="javascript:;"><img src="../images/icon_my_a.png"><p>我的</p></a>
+		</li>
+	</ul>
+</div>
+</body>
+</html>
