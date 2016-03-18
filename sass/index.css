@@ -1,6 +1,77 @@
 body {
   background: #c4c4c4; }
 
+/*header  footer begin*/
+#header {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.91667rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #eee;
+  font-size: 0.83333rem;
+  font-weight: bold; }
+
+#header a.logo {
+  display: inline-block;
+  width: 3.95833rem;
+  height: 1.45833rem;
+  padding: 0rem 0.83333rem 0 0.625rem; }
+
+#header input {
+  width: 17.91667rem;
+  height: 1.875rem;
+  padding-left: 0.41667rem;
+  margin-right: 0.625rem;
+  color: #000;
+  font: normal 1rem/1.875rem "Microsoft YaHei";
+  border: none 0;
+  border-radius: 0.83333rem; }
+
+#header p {
+  display: inline-block;
+  font: normal 1.08333rem/2.91667rem "Microsoft YaHei"; }
+
+#footer {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3.54167rem;
+  background: #444;
+  padding: 0;
+  border-top: 1px solid #444; }
+
+#footer ul {
+  padding-top: 0.625rem; }
+
+#footer li a {
+  display: block; }
+
+#footer li {
+  float: left;
+  width: 5.33333rem;
+  height: 2.70833rem; }
+
+#footer li img {
+  width: 1.45833rem;
+  border: 0 none;
+  margin: auto; }
+
+#footer li p {
+  width: 100%;
+  font: normal 0.75rem/1.16667rem "Microsoft YaHei";
+  color: #aaa;
+  margin: auto;
+  text-align: center; }
+
+#footer li.active p {
+  color: #10f9b7; }
+
+/*header  footer end*/
 #wrapper {
   position: absolute;
   z-index: 1;
@@ -190,7 +261,7 @@ body {
   background: #60aa19;
   padding: 0 0.20833rem 0rem 0.41667rem;
   border-radius: 0.83333rem 0 0 0.83333rem;
-  font: normal 0.5rem/1.20833rem "Microsoft YaHei";
+  font: normal 0.75rem/1.20833rem "Microsoft YaHei";
   color: #fff; }
 
 .palmselect_promotion {
