@@ -11,7 +11,7 @@ function is_weChat(){
     }
 }
 if(!is_weChat()){
-    //location.href='./weChat.html';
+    //*location.href='./weChat.html';
 };
 $(function(){
 
