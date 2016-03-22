@@ -11,12 +11,6 @@ function is_weChat(){
     }
 }
 //通过版本号 控制 微信判断
-try{
-console.log(version);
-}catch(version){
-
-    console.log("------"+version);
-}
 if(typeof(version)=='undefined'){
     if(!is_weChat()){
         location.href='./weChat.html';
