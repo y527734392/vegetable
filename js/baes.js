@@ -10,9 +10,19 @@ function is_weChat(){
         return false;
     }
 }
-if(!is_weChat()){
-    //******location.href='./weChat.html';
-};
+//通过版本号 控制 微信判断
+try{
+console.log(version);
+}catch(version){
+
+    console.log("------"+version);
+}
+if(typeof(version)=='undefined'){
+    if(!is_weChat()){
+        location.href='./weChat.html';
+    };
+}
+
 $(function(){
 
 });
