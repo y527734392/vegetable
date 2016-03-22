@@ -24,7 +24,7 @@
                 success:function(data){
                     //console.log(data);
                     var html = new EJS({url: '../ejs/test.ejs'}).render({con: data });
-                    document.body.innerHTML = html;
+                    document.body.innerHTML = html+html;
                 }
             });
             //var users = document.getElementById('users').innerHTML;
