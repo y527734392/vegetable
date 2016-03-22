@@ -1,0 +1,14 @@
+<% if (con['flag']) { %>
+<h1>22222</h1>
+<ul>
+    <!--<% names.forEach(function(name){ %>-->
+    <!--<li><%= name %></li>-->
+    <!--<% }) %>-->
+    <!--<% for (var i=0;i<names.length;i++){ %>-->
+        <!--<li class="li"><%= names[i] %></li>-->
+    <!--<% } %>-->
+    <% for(var name in con){ %>
+        <li class="active"><%= name %> :<%= con[name] %></li>
+    <% } %>
+</ul>
+<% } %>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/ejs.js"></script>
+    <script type="text/javascript" src="../js/ejs.view.js"></script>
+    <script>
+        var names = ['loki', 'tobi', 'jane'];
+        var json={a:1,b:2};
+        var ejsData=null;
+
+        window.onload = function(){
+            $.ajax({
+                url:'http://ebchain.hichao.com/token/base/get-encrypt', //?callback=?&appid=aa&secret=bb
+                type:'get',
+                jsonp:'callback',
+                dataType:'jsonp',
+                data:{
+                    appid:'aa',
+                    secret:'bb',
+                },
+                success:function(data){
+                    //console.log(data);
+                    var html = new EJS({url: '../ejs/test.ejs'}).render({con: data });
+                    document.body.innerHTML = html;
+                }
+            });
+            //var users = document.getElementById('users').innerHTML;
+            //var html = ejs.render(users, { names: names });
+            $("body").on("click",".active",function(){
+                alert($(this).text());
+            });
+
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
