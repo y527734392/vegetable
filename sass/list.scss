@@ -35,7 +35,7 @@ body { background: #c4c4c4; }
 
 /*list info start*/
 
-.list_info { position: relative; width: px2rem(420); margin: 0 px2rem(20);  }
+.list_info { position: absolute; width: px2rem(420); margin: 0 px2rem(20); z-index: 1; top: px2rem(70); bottom: 0; right: 0; }
 .linfo_box {  }
 .linfo_title { font: normal px2rem(24)/px2rem(50) "Microsoft Yahei"; padding-top:px2rem(35);  color:#000; }
 .linfo_box { background: #fff; padding-bottom: px2rem(20); }
