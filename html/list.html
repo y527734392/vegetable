@@ -22,7 +22,9 @@
 		}
 		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 		$(function(){
-			var oy_h = $(".linfo_list").length*parseInt($(".linfo_list").height());
+			var oy_h = parseInt($("#header").height())+parseInt($("#footer").height());
+			var oH = document.documentElement.clientHeight;
+			$('.list_title').css('height',oH-oy_h+'px');
 			//$(".list_info").css("height",'1800px');
 			setTimeout(function(){
 				loaded();
@@ -47,7 +49,7 @@
 		<div class="list_box clearfix">
 			<!--左侧列表 begin-->
 			<ul class="list_title fl">
-				<li>
+				<li class="active">
 					<a href="javascript:;">食品生鲜</a>
 				</li>
 				<li>
@@ -147,7 +149,7 @@
 <div id="footer">
 	<ul class="clearfix">
 		<li class="active">
-			<a href="javascript:;"><img src="../images/icon_home_a.png"><p>首页</p></a>
+			<a href="./index.html"><img src="../images/icon_home_a.png"><p>首页</p></a>
 		</li>
 		<li>
 			<a href="javascript:;"><img src="../images/icon_list.png"><p>分类</p></a>
