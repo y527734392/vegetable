@@ -27,8 +27,8 @@ body { background: #c4c4c4; }
 .list_box { margin-top:px2rem(70); margin-bottom: px2rem(85); }
 /*list title start 1*/
 
-.list_title { width: px2rem(180); background: #fff;  }
-.list_title li { width: 100%; height: px2rem(98); border-bottom: 1px solid #ddd; }
+.list_title { width: px2rem(180); background: #fff; border-right: 1px solid #888; }
+.list_title li { width: 100%; height: px2rem(98); border-bottom: 1px solid #888; }
 .list_title li.active { background: #ccc;}
 .list_title li a {display: block; font: normal px2rem(24)/px2rem(98) "Microsoft Yahei"; color:#333; text-align: center; }
 
