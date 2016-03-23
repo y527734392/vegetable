@@ -19,59 +19,23 @@
 	<script type="text/javascript">
 		var myScroll;
 		function loaded(){
-			myScroll = new IScroll('.list_info', { mouseWheel: true, click: true });
+			myScroll = new IScroll('#wrapper', { mouseWheel: true, click: true });
 		}
 		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 		$(function(){
-			var oy_h = parseInt($("#header").height())+parseInt($("#footer").height());
-			var oH = document.documentElement.clientHeight;
-			$('.list_title').css('height',oH-oy_h+'px');
-			//setTimeout(function(){
 			loaded();
-			//},1000);
-
 		})
 	</script>
 </head>
 <body>
-<div id="header">
+<div id="header" style="display: none;">
 	<a class="logo" href="javascript:;"><img src="../images/logo.png" width="100%"></a><input type="text"><p><a href="javascript:;">登录</a></p>
 </div>
 
 <div id="wrapper">
-	<div class="">
-		<div class="list_box clearfix">
-			<!--左侧列表 begin-->
-			<ul class="list_title fl">
-				<li class="active">
-					<a href="javascript:;">食品生鲜</a>
-				</li>
-				<li>
-					<a href="javascript:;">酒水饮料</a>
-				</li>
+	<div class="slide_box">
 
-			</ul>
-			<!--左侧列表 end-->
-
-			<div class="list_info fl">
-				<div class="slide_box">
-					<div class="linfo_list">
-						<h2 class="linfo_title">水果蔬菜</h2>
-						<ul class="linfo_box clearfix">
-							<li>
-								<a href="javascript:;">
-									<div><img src="http://imgsize.ph.126.net/?imgurl=http://img1.cache.netease.com/catchpic/2/20/2080878728095E5620FD4B2771E90A14.jpg_220x165x1x85.jpg&enlarge=true"></div>
-									<p>国产水果</p>
-								</a>
-
-							</li>
-
-						</ul>
-					</div>
-
-				</div>
-			</div>
-		</div>
+		<div class="aaa"></div>
 
 	</div>
 
@@ -80,11 +44,11 @@
 
 <div id="footer">
 	<ul class="clearfix">
-		<li>
-			<a href="./index.html"><img src="../images/icon_home.png"><p>首页</p></a>
-		</li>
 		<li class="active">
-			<a href="javascript:;"><img src="../images/icon_list_a.png"><p>分类</p></a>
+			<a href="javascript:;"><img src="../images/icon_home_a.png"><p>首页</p></a>
+		</li>
+		<li>
+			<a href="./category.html"><img src="../images/icon_list.png"><p>分类</p></a>
 		</li>
 		<li>
 			<a href="javascript:;"><img src="../images/icon_found.png"><p>发现</p></a>
