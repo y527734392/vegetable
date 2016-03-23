@@ -13,7 +13,8 @@ function is_weChat(){
 //通过版本号 控制 微信判断
 if(typeof(version)=='undefined'){
     if(!is_weChat()){
-        location.href='./weChat.html';
+        alert('no weChat');
+        //location.href='./weChat.html';
     };
 }
 
