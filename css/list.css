@@ -14,13 +14,23 @@ body {
   font-size: 0.83333rem;
   font-weight: bold; }
 
+#header a.back {
+  display: block;
+  width: 2.91667rem;
+  height: 2.91667rem;
+  margin-right: 0.625rem; }
+
 #header a.logo {
-  display: inline-block;
+  float: left;
+  display: block;
   width: 3.95833rem;
   height: 1.45833rem;
+  margin-top: 0.625rem;
   padding: 0rem 0.83333rem 0 0.625rem; }
 
 #header input {
+  float: left;
+  margin-top: 0.5rem;
   width: 17.91667rem;
   height: 1.875rem;
   padding-left: 0.41667rem;
@@ -30,9 +40,18 @@ body {
   border: none 0;
   border-radius: 0.83333rem; }
 
+#header .list_search {
+  width: 19.16667rem;
+  border-radius: 0.41667rem; }
+
 #header p {
-  display: inline-block;
+  float: right;
+  margin-right: 0.41667rem;
   font: normal 1.08333rem/2.91667rem "Microsoft YaHei"; }
+
+#header .list_more {
+  width: 2.91667rem;
+  height: 2.91667rem; }
 
 #footer {
   position: absolute;
@@ -75,11 +94,11 @@ body {
 #wrapper {
   position: absolute;
   z-index: 1;
-  top: -1px;
-  bottom: 3.54167rem;
+  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
-  background: #ccc;
+  background: #fff;
   overflow: hidden; }
 
 .slide_box {
@@ -105,7 +124,8 @@ body {
 
 .list_box {
   margin-top: 2.91667rem;
-  margin-bottom: 3.54167rem; }
+  margin-bottom: 3.54167rem;
+  background: #ccc; }
 
 /*list title start 1*/
 .list_title {
@@ -135,7 +155,7 @@ body {
   margin: 0 0.83333rem;
   z-index: 1;
   top: 2.91667rem;
-  bottom: 0;
+  bottom: 3.54167rem;
   right: 0; }
 
 .linfo_title {
@@ -152,6 +172,10 @@ body {
   width: 4.58333rem;
   padding: 1.66667rem 0.625rem 0; }
 
+.linfo_box li a {
+  display: block;
+  color: #000; }
+
 .linfo_box li div {
   width: 4.58333rem;
   height: 4.58333rem; }
@@ -166,5 +190,61 @@ body {
   text-align: center; }
 
 /*list info end*/
+.list_con {
+  margin-top: 7.70833rem; }
+
+.choose_list {
+  background: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #ddd; }
+
+.choose_list li {
+  float: left;
+  width: 6.66667rem;
+  height: 3.70833rem;
+  text-align: center;
+  font: normal 1.08333rem/3.70833rem "Microsoft Yahei";
+  color: #333; }
+
+.choose_list li.active {
+  color: #ff4400; }
+
+/*hotsell start*/
+.hotSell {
+  background: #fff;
+  padding-bottom: 0.83333rem; }
+
+.hotSell_list {
+  height: 8.33333rem;
+  margin-bottom: 0.41667rem; }
+
+.hotSell_list a {
+  display: block; }
+
+.hotSellL_pic img {
+  width: 8.33333rem;
+  height: 100%;
+  margin-right: 1.04167rem; }
+
+.hotSellL_info {
+  width: 17.29167rem;
+  height: 8.33333rem;
+  color: #000;
+  border-top: 1px solid #ddd; }
+
+.hotSellL_info .hotSellL_title {
+  margin: 0.625rem 0.625rem 1.25rem 0;
+  font: normal 1rem/1.5rem "Microsoft YaHei";
+  color: #222; }
+
+.hotSellL_info .hotSellL_money {
+  font: bold 1.5rem/2.04167rem "Microsoft YaHei";
+  color: #ff4400;
+  padding-bottom: 0.41667rem; }
+
+.hotSellL_info .hotSellL_evaluation {
+  font: normal 0.75rem/1.125rem "Microsoft YaHei";
+  color: #aaa; }
+
+/*hotsell end*/
 
 /*# sourceMappingURL=list.css.map */
