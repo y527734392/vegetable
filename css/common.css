@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+ul, ol, dl {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #fff;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-focus-ring-color: transparent; }
+
+img {
+  border: 0;
+  vertical-align: middle;
+  display: block; }
+
+.clear {
+  clear: both; }
+
+.clearfix:after {
+  display: block;
+  font-size: 0;
+  content: ".";
+  clear: both;
+  height: 0;
+  visibility: hidden; }
+
+.clearfix {
+  *height: 1%; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+/*transition*/
+.css {
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000; }
+
+.css {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/*# sourceMappingURL=common.css.map */
