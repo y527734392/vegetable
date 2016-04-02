@@ -1,0 +1,93 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>购物车</title>
+	<link type="text/css" rel="stylesheet" href="../css/normalize.css">
+	<!--<link type="text/css" rel="stylesheet" href="../css/swiper-3.3.1.min.css">-->
+	<link type="text/css" rel="stylesheet" href="../css/media.css">
+	<link type="text/css" rel="stylesheet" href="../css/common.css">
+	<link type="text/css" rel="stylesheet" href="../css/cart.css">
+	<script type="text/javascript" src="../js/iscroll.js"></script>
+	<script type="text/javascript" src="../js/zepto.min.js"></script>
+	<script type="text/javascript" src="../js/swiper.min.js"></script>
+	<script type="text/javascript" src="../js/version.js"></script>
+	<script type="text/javascript" src="../js/baes.js"></script>
+	<script type="text/javascript">
+		var myScroll;
+		function loaded(){
+			myScroll = new IScroll('#wrapper', { mouseWheel: true, click: true });
+		}
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+		$(function(){
+			loaded();
+		})
+	</script>
+</head>
+<body>
+<div id="header">
+	<div class="clearfix">
+		<a class="back fl" href="javascript:history.go(-1)"><img src="../images/common/back.png" width="100%"></a><input class="list_search" type="text"><p class="list_more"><a href="javascript:;"><img src="../images/common/more_homesearch.png" width="100%"></a></p>
+	</div>
+</div>
+
+<div id="wrapper">
+	<div class="slide_box">
+		<div class="carts_con">
+			<div class="carts_address">
+				<h2>董小姐&#12288;&#12288;131****6122<span>默认</span></h2>
+				<p><i></i>北京海淀区三环以内-远大东路1董事及纪元购物站内信中心5层</p>
+			</div>
+			<div class="cart_info">
+				<div class="cart_num">
+					<a href="javascript:;">
+						<ul>
+							<li><img src=""></li>
+						</ul>
+						<div>共7件<i></i></div>
+					</a>
+				</div>
+				<div class="cart_send">
+					<h3>支付配送</h3>
+					<ul>
+						<li>在线支付</li>
+						<li>商家配送</li>
+						<li><i></i>工作日、双休日与假日均可送货</li>
+					</ul>
+				</div>
+				<div class="cart_invoice">
+					<h3>发票信息</h3>
+					<p>明细(纸质)-个人</p>
+				</div>
+			</div>
+			<div class="cart_note">
+				<input type="text">
+			</div>
+			<ul class="cart_goodsMonry">
+				<li>
+					<h4>商品金额</h4>
+					<p>￥3228.43</p>
+				</li>
+				<li>
+					<h4>运费</h4>
+					<p>+￥5.00</p>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+
+</div>
+
+
+<div id="footer">
+	<div class="cart_settlement clearfix fl">
+		<h2 class="cart_realPay">实付款:￥332.74</h2>
+	</div>
+	<div class="addCart fl"><a href="javascript:;">提交订单</a></div>
+</div>
+</body>
+</html>
