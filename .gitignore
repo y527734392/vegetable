@@ -2,4 +2,8 @@
 /js/base.js
 /js/version.js
 /sass
-
+vcs.xml
+.sass*
+*.css.map
+.idea
+.DS_Store
