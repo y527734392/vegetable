@@ -12,3 +12,89 @@
     <% } %>
 </ul>
 <% } %>
+<%console.log(con.data.oneFloor.hotGoods)%>
+<div id="header">
+    <a class="logo" href="javascript:;"><img src="../images/logo.png" width="100%"></a><input type="text"><p><a href="javascript:;">登录</a></p>
+</div>
+
+<div id="wrapper">
+    <div class="slide_box">
+        <!--banner begin-->
+        <div class="banner swiper-container">
+            <div class="swiper-wrapper">
+                <% for(var name in con.data.banner){ %>
+                <div class="swiper-slide"><img src="<%= con.data.banner[name].imageUrl %>" width="100%"></div>
+                <% } %>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!--banner end-->
+
+        <!--掌上精选 begin-->
+        <div class="palmselect">
+            <h2 class="index_title clearfix"><em></em>掌上精选<span class="more">更多精选></span></h2>
+            <div class="palmselectBox swiper-container">
+                <div class="swiper-wrapper">
+                    <% for(var num in con.data.oneFloor.hotGoods){ %>
+                        <div class="palmselect_list swiper-slide">
+                            <a href="./detail.html" style="display:block;">
+                                <div class="palmselect_pic"><img src="<%= con.data.oneFloor.hotGoods[num].goodsImg %>"><p class="palmselect_title"><em></em>妇女节</p></div>
+                                <p class="palmselect_promotion">￥<%= con.data.oneFloor.hotGoods[num].lPrice %></p>
+                                <p class="palmselect_actual">￥<%= con.data.oneFloor.hotGoods[num].lPrice %></p>
+                            </a>
+                        </div>
+                    <% } %>
+
+                </div>
+            </div>
+        </div>
+        <!--掌上精选 end-->
+
+        <!--中banner begin-->
+        <div class="middleBanner"><img src="../images/middleBanner.jpg"></div>
+        <!--中banner end-->
+
+        <!--热卖单品 begin-->
+        <div class="hotSell">
+            <h2 class="index_title clearfix"><em></em>热卖单品<span class="more">更多单品></span></h2>
+            <ul class="hotSell_con">
+                <% for(var num in con.data.oneFloor.hotGoods){ %>
+                    <li class="hotSell_list">
+                        <a class="clearfix" href="javascript:;">
+                            <div class="hotSellL_pic fl"><img src="<%= con.data.oneFloor.hotGoods[num].goodsImg %>"></div>
+                            <div class="hotSellL_info fl">
+                                <h3 class="hotSellL_title"><%= con.data.oneFloor.hotGoods[num].goodsName %></h3>
+                                <p class="hotSellL_money">￥&nbsp;<%= con.data.oneFloor.hotGoods[num].lPrice %></p>
+                                <p class="hotSellL_evaluation">98%好评&#12288;27319人</p>
+                            </div>
+                        </a>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+        <!--热卖单品 end-->
+
+    </div>
+
+</div>
+
+
+<div id="footer">
+    <ul class="clearfix">
+        <li class="active">
+            <a href="javascript:;"><img src="../images/icon_home_a.png"><p>首页</p></a>
+        </li>
+        <li>
+            <a href="./category.html"><img src="../images/icon_list.png"><p>分类</p></a>
+        </li>
+        <li>
+            <a href="javascript:;"><img src="../images/icon_found.png"><p>发现</p></a>
+        </li>
+        <li>
+            <a href="./cart.html"><img src="../images/icon_shopping.png"><p>购物车</p></a>
+        </li>
+        <li>
+            <a href="./user.html"><img src="../images/icon_my.png"><p>我的</p></a>
+        </li>
+    </ul>
+</div>

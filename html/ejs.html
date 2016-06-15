@@ -1,37 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>首页</title>
+    <link type="text/css" rel="stylesheet" href="../css/normalize.css">
+    <!--<link type="text/css" rel="stylesheet" href="../css/swiper-3.3.1.min.css">-->
+    <link type="text/css" rel="stylesheet" href="../css/media.css">
+    <link type="text/css" rel="stylesheet" href="../css/common.css">
+    <link type="text/css" rel="stylesheet" href="../css/index.css">
+    <script type="text/javascript" src="../js/iscroll.js"></script>
     <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <script type="text/javascript" src="../js/swiper.min.js"></script>
     <script type="text/javascript" src="../js/ejs.js"></script>
     <script type="text/javascript" src="../js/ejs.view.js"></script>
+    <script type="text/javascript" src="../js/version.js"></script>
+    <script type="text/javascript" src="../js/baes.js"></script>
     <script>
-        var names = ['loki', 'tobi', 'jane'];
-        var json={a:1,b:2};
-        var ejsData=null;
+        var myScroll;
+        function loaded(){
+            myScroll = new IScroll('#wrapper', { mouseWheel: true, click: true });
+        }
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+        $(function(){
 
+
+
+
+        })
         window.onload = function(){
             $.ajax({
-                url:'http://ebchain.hichao.com/token/base/get-encrypt', //?callback=?&appid=aa&secret=bb
+                url:'http://dev-ebchain.hichao.com/app_v1/index', //?callback=?&appid=aa&secret=bb
                 type:'get',
                 jsonp:'callback',
                 dataType:'jsonp',
                 data:{
-                    appid:'aa',
-                    secret:'bb',
+                    _from:'pc',
                 },
                 success:function(data){
-                    //console.log(data);
+                    console.log(data);
                     var html = new EJS({url: '../ejs/test.ejs'}).render({con: data });
-                    document.body.innerHTML = html+html;
+                    document.body.innerHTML = html;
+                    loaded();
+                    var swiper = new Swiper('.banner', {
+                        pagination: '.swiper-pagination',
+                        loop:true,
+                        paginationClickable: true,
+                        autoplay:3000
+                    });
+                    var palmselect = new Swiper('.palmselectBox', {
+                        //pagination: '.swiper-pagination',
+                        slidesPerView : 'auto',
+                        //paginationClickable: true,
+                        spaceBetween: 10
+                    });
                 }
             });
             //var users = document.getElementById('users').innerHTML;
             //var html = ejs.render(users, { names: names });
-            $("body").on("click",".active",function(){
-                alert($(this).text());
-            });
+//            $("body").on("click",".active",function(){
+//                alert($(this).text());
+//            });
 
         }
     </script>
@@ -39,3 +71,4 @@
 <body>
 </body>
 </html>
+

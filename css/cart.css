@@ -241,5 +241,97 @@ body {
   text-align: center; }
 
 /*shopping number end*/
+/*cart_submit start*/
+.carts_con {
+  padding: 2.91667rem 0 3.54167rem; }
+
+.carts_address h2 {
+  padding: 1.04167rem 0 1.04167rem 2.5rem;
+  font: normal 1rem/1.5rem "Microsoft Yahei";
+  color: #333; }
+
+.carts_address h2 span {
+  display: inline-block;
+  margin-left: 0.83333rem;
+  width: 3.125rem;
+  height: 1.25rem;
+  background: #f23030;
+  text-align: center;
+  font: normal 0.75rem/1.25rem "Microsoft Yahei";
+  color: #fff; }
+
+.carts_aTxt {
+  padding-left: 0.83333rem;
+  padding-bottom: 0.83333rem; }
+
+.carts_aTxt p {
+  width: 22.08333rem;
+  float: left;
+  padding-left: 0.625rem;
+  font: normal 0.83333rem/1.33333rem "Microsoft Yahei";
+  color: #333; }
+
+.carts_aTxt i {
+  display: block;
+  float: left;
+  width: 0.875rem;
+  height: 1rem;
+  background: #000; }
+
+.cart_info {
+  padding: 0.625rem 0;
+  background: #ccc; }
+
+.cart_num, .cart_send, .cart_invoice {
+  padding: 0.83333rem 0.625rem;
+  border-top: 1px solid #ccc;
+  height: 5.41667rem;
+  background: #fff; }
+
+.cart_send, .cart_invoice {
+  height: auto; }
+
+.cart_send h3, .cart_invoice h3 {
+  float: left;
+  width: 5.41667rem;
+  font: normal 1.08333rem/1.5rem "Microsoft Yahei"; }
+
+.cart_send ul, .cart_invoice p {
+  float: right;
+  text-align: right; }
+
+.cart_send ul li, .cart_invoice p {
+  font: normal 0.91667rem/1.5rem "Microsoft Yahei";
+  color: #333; }
+
+.cart_note {
+  padding-bottom: 0.625rem;
+  background: #ccc; }
+
+.cart_note input {
+  border: none;
+  width: 100%;
+  padding: 0.83333rem 0.83333rem; }
+
+.cart_goodsMonry {
+  padding: 0.41667rem 0.83333rem 0.83333rem; }
+
+.cart_goodsMonry li {
+  padding-top: 0.83333rem; }
+
+.cart_goodsMonry li h4 {
+  float: left; }
+
+.cart_goodsMonry li p {
+  float: right;
+  font: normal 1rem/1.5rem "Microso yahei";
+  color: #f40000; }
+
+.cart_realPay {
+  font: normal 1rem/3.54167rem "Microsoft Yahei";
+  color: #ff0000;
+  padding-left: 0.83333rem; }
+
+/*cart_submit end*/
 
 /*# sourceMappingURL=cart.css.map */
